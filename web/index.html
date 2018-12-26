@@ -1,39 +1,71 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
-    <head>
-        <title>Change the content of a cell</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            body {
-                margin: 30px;
-            }
-        </style>
-        <script>
-            function createTable() {
-                var dong = arguments[0];
-                var cot = arguments[1];
-                var table = document.getElementById('myTable');
-                for (i = 0; i < dong; i++) {
-                    var row = table.insertRow(0);
-                    for (j = 0; j < cot; j++) {
-                        var cell1 = row.insertCell(0);
-                        cell1.innerHTML = "new cell1";
-                    }
-                }
-            }
-        </script>
-    </head>
-    <body>
-        <table id="myTable" border="1"></table>
-        <form>
-            <input type="button" onclick="createTable(5, 10)" value="Create the table">
-        </form>
-    </body>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="language" content="en">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta property="og:title" content="" />
+		<meta property="og:image" content="" />
+		<meta property="og:description" content="" />
+		<title>Demo</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="left menu">
+				<ul>
+					<li>
+						<a>Lorem ipsum dolor sit amet</a>
+					</li>
+					<li>
+						<a>Lorem ipsum dolor sit amet</a>
+					</li>
+					<li>
+						<a>Lorem ipsum dolor sit amet</a>
+					</li>
+				</ul>
+
+			</div>
+			<div class="center">
+				<div class="title">The walk</div>
+				<div class="des">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+				<img src="img/PC2.gif" class="img-responsive">
+				
+			</div>
+			<div class="right">
+				<div class="content">
+					<div class="title">What ?</div>
+					<div>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+					</div>
+				</div>
+				<div class="content">
+					<div class="title">What ?</div>
+					<div>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+					</div>
+				</div>
+				<div class="content">
+					<div class="title">What ?</div>
+					<div>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+		<div class="footer">
+			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+		</div>
+	</body>
 </html>
-`

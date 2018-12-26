@@ -1,7 +1,8 @@
 
 body{font-size: 14px; color: #000 !important; line-height: 1.4 !important;margin: 0}
 
-.container{width: 100%; position: relative;}
+.container{width: 100%;}
+
 .container .left{
 	width: 300px; 
 	float: left;
@@ -23,6 +24,7 @@ body{font-size: 14px; color: #000 !important; line-height: 1.4 !important;margin
 .menu ul{list-style-type: none;padding: 0px}
 .menu ul li {margin-top: 10px; margin-bottom: 20px; border-bottom: 1px solid #ccc;padding: 10px 0; font-size: 16px}
 
+.footer{text-align: center;width: 100%; padding-top:20px; padding-bottom: 20px; background: #ccc; margin-top: 30px}
 @media only screen   and (max-width: 766px){
 	.container .left{ width: 100%; margin-bottom: 30px; }
 	.container .right{ width: 100%;}
