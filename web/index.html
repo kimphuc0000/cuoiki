@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Change the content of a cell</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                margin: 30px;
+            }
+        </style>
+        <script>
+            function createTable() {
+                var dong = arguments[0];
+                var cot = arguments[1];
+                var table = document.getElementById('myTable');
+                for (i = 0; i < dong; i++) {
+                    var row = table.insertRow(0);
+                    for (j = 0; j < cot; j++) {
+                        var cell1 = row.insertCell(0);
+                        cell1.innerHTML = "new cell1";
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <table id="myTable" border="1"></table>
+        <form>
+            <input type="button" onclick="createTable(5, 10)" value="Create the table">
+        </form>
+    </body>
+</html>
+`
